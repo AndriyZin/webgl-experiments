@@ -1,5 +1,5 @@
 export enum AuthActions  {
-    SET_LOGIN_STATUS = 'SET_LOGIN_STATUS',
+    SET_LOGIN_STATUS = 'SET_LOGIN_STATUS'
 }
 
 export function setLoginStatus(userData: any) {
