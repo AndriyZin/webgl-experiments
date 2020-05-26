@@ -476,6 +476,7 @@ module.exports = function(webpackEnv) {
               test: sassModuleRegex,
               use: getStyleLoaders(
                 {
+                  localsConvention: 'camelCase',
                   importLoaders: 3,
                   sourceMap: isEnvProduction && shouldUseSourceMap,
                   modules: {
@@ -484,6 +485,10 @@ module.exports = function(webpackEnv) {
                 },
                 'sass-loader'
               ),
+            },
+            {
+              test: /\.svg$/,
+              use: ['@svgr/webpack'],
             },
             {
               test: /\.(glsl|vs|fs)$/,
