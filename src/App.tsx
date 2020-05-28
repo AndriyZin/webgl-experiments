@@ -3,6 +3,7 @@ import "./App.css";
 import { Provider } from "react-redux";
 import store from './@redux/store';
 import { Button } from 'antd';
+import * as THREE from "three";
 
 function App() {
     return (
