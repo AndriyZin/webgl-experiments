@@ -47,13 +47,7 @@ components:
           example: d290f1ee-6c54-4b01-90e6-d701748f0851
         name:
           type: string
-          example: Johnny Depp
-    HelloSchema:
-      type: object
-      properties:
-        id:
-          type: integer
-          format: int64
+          example: Johnny Depps
   securitySchemes:
     bearerAuth:
       type: http
